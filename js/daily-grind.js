@@ -48,24 +48,43 @@ switch(myDay){
 
      case 0:
          today = "Sunday";
-     break;
+    
 
+     coffee = {
+        name: "Pumpkin Spice",
+        pic: "images/pumpkin-spice-latte.jpg",
+        day: "Monday",
+        alt: "A pic of a Pumpkin spice",
+        color: "orange",
+        desc: `One of our best sellers!`
+    };
+    break;
      case 1:
         today = "Monday";
 
         coffee = {
-            name: "Pumpkin Spice",
-            pic: "images/pumpkin-spicelatte.jpg",
+            name: "Caramel-latte",
+            pic: "images/caramel-latte.jpg",
             day: "Monday",
-            alt: "A pic of a Pumpkin spice",
-            color: "orange",
-            desc: `One of our best sellers!`
+            alt: "A pic of a Carmamel-latte",
+            color: "brown",
+            desc: `One of our top 3 sellers!`
         };
 
     break;
 
      case 2:
          today = "Tuesday";
+
+         coffee = {
+            name: "Cold Brew",
+            pic: "images/cold-brew.jpg",
+            day: "Tuesday",
+            alt: "A pic of a Cold Brew",
+            color: "black",
+            desc: `For the ones that like it dark!`
+        };
+
      break;
 
      case 3:
@@ -80,6 +99,48 @@ switch(myDay){
             desc: `I like me some Bubble Tea!`
         };
 
+        break;
+
+        case 4:
+        today = "Thursday";
+        
+        coffee = {
+           name: "Drip",
+           pic: "images/drip.jpg",
+           day: "Thursday",
+           alt: "A pic of Drip",
+           color: "Red",
+           desc: `For the ones that like Drip!`
+        };
+
+    break;
+
+    case 5:
+        today = "Friday";
+        
+        coffee = {
+           name: "Frappaccino",
+           pic: "images/frappaccino.jpg",
+           day: "Friday",
+           alt: "A pic of Frappaccino",
+           color: "green",
+           desc: `For the ones that like Frappaccino!`
+        };
+
+    break;
+
+    case 6:
+        today = "Saturday";
+        
+        coffee = {
+           name: "mocha",
+           pic: "images/mocha.jpg",
+           day: "Saturday",
+           alt: "A pic of mocha",
+           color: "yellow",
+           desc: `For the ones that like mocha`
+        };
+
     break;
   
      default:
@@ -87,7 +148,7 @@ switch(myDay){
 
 }
 
-alert(today);
+//alert(today);
 console.log(coffee);
 
 document.getElementById("coffee-cup").innerHTML = coffeeTemplate(coffee);
